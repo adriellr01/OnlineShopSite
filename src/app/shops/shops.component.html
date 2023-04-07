@@ -1,0 +1,13 @@
+<div style="display: flex; justify-content: center;">
+    <div>
+        <h2>Tiendas registradas:</h2>
+
+        <ul class="shops">
+          <li *ngFor="let shop of shops">
+            <button type="button" (click)="onShopClicked(shop)">
+                  <b>{{ shop.name }}</b> ({{ shop.phoneNumber }})
+            </button>
+          </li>
+        </ul>
+    </div>
+</div>
